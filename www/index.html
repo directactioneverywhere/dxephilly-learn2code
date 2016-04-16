@@ -22,6 +22,44 @@
 <img src="media/images/css-sample-code.png">
 <img src="media/images/css-sample-code-rendered.png">
 <!-- TODO: Part 1: HTML -->
-<!-- TODO: Part 2: CSS -->
+<h1>Part 2: CSS</h1>
+<p>CSS targets HTML elements using <span class="keyword">selectors</span>. A selector can find and search for one or more HTML elements based on their tag, ID attribute value, class attribute value, nesting within other elements, and more. For instance:</p>
+<div class="code">p { color: red; }</div>
+<p>The selector is the p. It selects all &lt;p&gt; elements and sets their text color to red.</P>
+<div class="code">p .post { color: green; }</div>
+<p>This selector finds elements with a class="post" attribute and sets their text color to green. class attributes are used to set a name on elements; you can call it anything you want. class attributes are leveraged by CSS and JavaScript to find certain elements by the class name you choose.</p>
+<div class="code">p .post p a.special-link { color: blue; }</div>
+<p>This selector will find <a> tags which have a class="special-link" attribute. Those <a> tags must be the child of a <p> element. That <p> element must be the child of an element with a class="post" attribute. The selected elements will have their color set to blue.</P>
+
+<h2>Properties</h2>
+
+<p>Once you select some elements with CSS, you may style them using properties. In the examples above, the properties are the parts that look like color: red;
+<p>A group of properties are surrounded by curly braces {}. Property names have a colon : at the end, and property values have a semi-colon ; at the end. Multiple properties may appear between the braces, and are usually separated onto their own lines.</p>
+
+<div class="code" >p a.button { padding: 15px; background: red; color: white; border-radius: 4px; }</div>
+
+<h3>Common properties</h3>
+
+<dl>
+<dt>color</dt>
+<dd>Sets the color of text. values: red, blue, etc... #ffffff, #000000, etc.</dd>
+
+<dt>background-color</dt>
+<dd>Sets the background color of an element. values: red, blue, etc... #ffffff, #000000, etc.</dd>
+
+<dt>font-size</dt>
+<dd>Font size of text. values: 24px, 50%, 2em, etc.</dd>
+<dt>font-weight</dt>
+<dd>The thickness of text. values: bold, normal, 300, 700, etc.</dd>
+<dt>font-family</dt>
+<dd>Name of the font you want to use. values: Arial, Helvetica, sans, sans-serif, etc.</dd>
+<dt>text-align</dt>
+<dd>Aligns text on the screen. values: left, right, center</dd>
+<dt>margin</dt>
+<dd>Adds spacing around an element. values: 10px, 20px, etc.</dd>
+<dt>padding</dt>
+<dd>Adds spacing inside an element. values: 10px, 20px, etc.</dd>
+</dl>
+
 </body>
 </html>
