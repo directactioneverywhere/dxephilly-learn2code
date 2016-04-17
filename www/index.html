@@ -1,112 +1,125 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Learn to Code: For the Animals</title>
+  <title>Learn to Code: For the Animals</title>
 </head>
+
 <body>
-<h1>Learn to Code: For the Animals</h1>
-<span class="subheadline">Web Basics</span>
-<img src="assets/images/dxe-banner-philadelphia.svg">
-<p>Websites are made up of <span class="keyword">HTML</span>, <span class="keyword">CSS</span>, and <span class="keyword">JavaScript</span>code. There can be more to it than that, but for now we're going to focus on <span class="keyword">front-end code</span>. HTML, CSS, and JavaScript are front-end code. The front-end is the part of the website you can see. It's a code that a web browser can directly understand.</p>
-<p class="caption">Pictured: the front-end of directactioneverywhere.com</p>
-<img src="media/images/dxe-website-screenshot.png">
-<div class="infobox">Websites can also have <span class="keyword">back-end</span> code. Back-end code can be used to generate front-end code dynamically. While front-end code is limited in its capability, the capability of back-end code is virtually limitless. Any programming language can be used to write back-end code, such as C++, Python, Ruby, C, Lisp, Fortran, and even <a href="https://en.wikipedia.org/wiki/Brainfuck">Brainfuck</a>. More on that later. </div>
-<h1>Front-end Technology</h1>
-<h2>HTML</h2>
-<p><em>Hypertext markup language.</em> HTML is used to create the layout of a web page. It determines the order that elements appear in, the nesting of elements, and the names you assign to elements.</p>
-<p class="caption">Pictured: some HTML sample code</p>
-<img src="media/images/html-sample-code.png">
-<img src="media/images/html-sample-rendered.png">
-<h3>CSS</h2>
-<p><em>Cascading style sheet.</em> CSS is used to produce the style of a web page. It determines the colors of things, sizes of shapes and text, position of elements, and more.</p>
-<img src="media/images/css-sample-code.png">
-<img src="media/images/css-sample-code-rendered.png">
-<<<<<<< HEAD
-<h1>Part 1:HTML</h1>
-<p>HTML comes in the form of <span class="keyword">tags</span>. Tags make up page <span class="keyword">elements</span>. For instance, you'd use the p tag to create a paragraph. "p" stands for paragraph. Like so:</p>
-<div class="code">&lt;p&gt;This is a paragraph!&lt;/p&gt;
-&lt;p&gt;This is another paragraph.&lt;/p&gt;</div>
-<p>There is an <span class="keyword">opening tag</span> and a <span class="keyword">closing tag</span>. The closing tag will always be the same as the opening tag, except there will be a / in it. Most HTML elements have closing tags, but some of them like <span class="code">&lt;br&gt;</span> (line break) exist by themselves. In between tags, there will be some text, or some other tags.</p>
-<div class="code">&lt;p&gt;Want me to tell you something &lt;strong&gt;awesome&lt;/strong&gt;?&lt;/p&gt;</div>
-<p>Above is an example of nested tags. The strong tag pair is nested within the p tags. strong makes text appear bold by default.</p>
-<h2>Common Tags</h2>
-<dl>
-  <dt>&lt;h1&gt;Header 1&lt;/h1&gt;</dt>
-  <dd>Used to make top level headers. This is usually the title of the page.</dd>
-  <dt>&lt;h2&gt;Header 2...&lt;/h2&gt;</dt>
-  <dd>The trend continues from h1 to h6.</dd>
-  <dt>&lt;div&gt;Divider&lt;/div&gt;</dt>
-  <dd>A generic divider element. Use this to divide up your page layout into distinct parts.</dd>
-  <dt>&lt;a&gt;Anchor&lt;/a&gt;</dt>
-  <dd>There are used to make links and define parts of the page that can be skipped to.</dd>
-  <dt>&lt;p&gt;Paragraph&lt;/p&gt;</dt>
-  <dd>Make paragraphs of text.</dd>
-  <dt>&lt;strong&gt;Strong&lt;/strong&gt;</dt>
-  <dd>Represents important text which is bold by default.</dd>
-  <dt>&lt;em&gt;Emphasis&lt;/em&gt;</dt>
-  <dd>Represents emphasized text which is italic by default.</dd>
-</dl>
-<h2>Attributes</h2>
-<p><span class="keyword">Attributes</span> let you add additional information to tags. Some tags require an attribute in order to be used for their intended purpose.</P>
-<p>For example:</p>
-<div class="code">&lt;div class=&quot;post&quot;&gt;</div>
-<p>In this case, <span class="code">class="post"</span> is an attribute. class is the <span class="keyword">attribute name</span>, and post is the <span class="keyword">attribute value</span>.</p>
-<h3>Multiple Attributes</h3>
-<p>Multiple attributes are allowed. They&apos;re separated by a space. For instance:</p>
-<div class="code">&lt;a class=&quot;special-link&quot; href=&quot;http://mysite.com/&quot;&gt;</div>
-<p>In this case, class=&quot;special-link&quot; and href=&quot;http://mysite.com/&quot; are both attributes.</p>
-<h3>Images</h3>
-<p>&lt;img src=&quot;picture.jpg&quot;&gt;</p>
-<h3>Links</h3>
-<p>&lt;a href=&quot;http://github.com&quot;&gt;GitHub&lt;/a&gt;</p>
-<h2>Basic HTML page structure</h2>
-<p>This is the most basic valid HTML page structure for a web page.</p>
-<div class="code">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;title&gt;The Page Title&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;!-- Your code here --&gt;
-&lt;/body&gt;
-&lt;/html&gt;&emsp;</div>
-<h1>Part 2: CSS</h1>
-<p>CSS targets HTML elements using <span class="keyword">selectors</span>. A selector can find and search for one or more HTML elements based on their tag, ID attribute value, class attribute value, nesting within other elements, and more. For instance:</p>
-<div class="code">p { color: red; }</div>
-<p>The selector is the p. It selects all &lt;p&gt; elements and sets their text color to red.</P>
-<div class="code">p .post { color: green; }</div>
-<p>This selector finds elements with a class="post" attribute and sets their text color to green. class attributes are used to set a name on elements; you can call it anything you want. class attributes are leveraged by CSS and JavaScript to find certain elements by the class name you choose.</p>
-<div class="code">p .post p a.special-link { color: blue; }</div>
-<p>This selector will find <a> tags which have a class="special-link" attribute. Those <a> tags must be the child of a <p> element. That <p> element must be the child of an element with a class="post" attribute. The selected elements will have their color set to blue.</P>
-
-<h2>Properties</h2>
-
-<p>Once you select some elements with CSS, you may style them using properties. In the examples above, the properties are the parts that look like color: red;
-<p>A group of properties are surrounded by curly braces {}. Property names have a colon : at the end, and property values have a semi-colon ; at the end. Multiple properties may appear between the braces, and are usually separated onto their own lines.</p>
-
-<div class="code" >p a.button { padding: 15px; background: red; color: white; border-radius: 4px; }</div>
-
-<h3>Common properties</h3>
-
-<dl>
-<dt>color</dt>
-<dd>Sets the color of text. values: red, blue, etc... #ffffff, #000000, etc.</dd>
-
-<dt>background-color</dt>
-<dd>Sets the background color of an element. values: red, blue, etc... #ffffff, #000000, etc.</dd>
-
-<dt>font-size</dt>
-<dd>Font size of text. values: 24px, 50%, 2em, etc.</dd>
-<dt>font-weight</dt>
-<dd>The thickness of text. values: bold, normal, 300, 700, etc.</dd>
-<dt>font-family</dt>
-<dd>Name of the font you want to use. values: Arial, Helvetica, sans, sans-serif, etc.</dd>
-<dt>text-align</dt>
-<dd>Aligns text on the screen. values: left, right, center</dd>
-<dt>margin</dt>
-<dd>Adds spacing around an element. values: 10px, 20px, etc.</dd>
-<dt>padding</dt>
-<dd>Adds spacing inside an element. values: 10px, 20px, etc.</dd>
-</dl>
+  <h1>Learn to Code: For the Animals</h1>
+  <span class="subheadline">Web Basics</span>
+  <img src="assets/images/dxe-banner-philadelphia.svg" width="100%">
+  <p>Websites are made up of <span class="keyword">HTML</span>, <span class="keyword">CSS</span>, and <span class="keyword">JavaScript</span>code. There can be more to it than that, but for now we're going to focus on <span class="keyword">front-end code</span>.
+    HTML, CSS, and JavaScript are front-end code. The front-end is the part of the website you can see. It's a code that a web browser can directly understand.</p>
+  <p class="caption">Pictured: the front-end of directactioneverywhere.com</p>
+  <img src="media/images/dxe-website-screenshot.png">
+  <div class="infobox">Websites can also have <span class="keyword">back-end</span> code. Back-end code can be used to generate front-end code dynamically. While front-end code is limited in its capability, the capability of back-end code is virtually limitless. Any programming language can be used to write back-end code, such as C++, Python, Ruby, C, Lisp, Fortran, and even <a href="https://en.wikipedia.org/wiki/Brainfuck">Brainfuck</a>. More on that later.</div>
+  <h1>Front-end Technology</h1>
+  <h2>HTML</h2>
+  <p><em>Hypertext markup language.</em> HTML is used to create the layout of a web page. It determines the order that elements appear in, the nesting of elements, and the names you assign to elements.</p>
+  <p class="caption">Pictured: some HTML sample code</p>
+  <img src="media/images/html-sample-code.png">
+  <img src="media/images/html-sample-rendered.png">
+  <h2>CSS</h2>
+  <p><em>Cascading style sheet.</em> CSS is used to produce the style of a web page. It determines the colors of things, sizes of shapes and text, position of elements, and more.</p>
+  <img src="media/images/css-sample-code.png">
+  <img src="media/images/css-sample-code-rendered.png">
+  <h1>Part 1: HTML</h1>
+  <p>HTML comes in the form of <span class="keyword">tags</span>. Tags make up page <span class="keyword">elements</span>. For instance, you'd use the p tag to create a paragraph. "p" stands for paragraph. Like so:</p>
+  <div class="code">
+    <pre>
+&lt;p&gt;This is a paragraph!&lt;/p&gt;
+&lt;p&gt;This is another paragraph.&lt;/p&gt;
+</pre>
+  </div>
+  <p>There is an <span class="keyword">opening tag</span> and a <span class="keyword">closing tag</span>. The closing tag will always be the same as the opening tag, except there will be a / in it. Most HTML elements have closing tags, but some of them like
+    <span class="code">&lt;br&gt;</span> (line break) exist by themselves. In between tags, there will be some text, or some other tags.</p>
+  <div class="code">
+    <pre>&lt;p&gt;Want me to tell you something &lt;strong&gt;awesome&lt;/strong&gt;?&lt;/p&gt;</pre>
+  </div>
+  <p>Above is an example of nested tags. The strong tag pair is nested within the p tags. strong makes text appear bold by default.</p>
+  <h2>Common Tags</h2>
+  <dl>
+    <dt>&lt;h1&gt;Header 1&lt;/h1&gt;</dt>
+    <dd>Used to make top level headers. This is usually the title of the page.</dd>
+    <dt>&lt;h2&gt;Header 2...&lt;/h2&gt;</dt>
+    <dd>The trend continues from h1 to h6.</dd>
+    <dt>&lt;div&gt;Divider&lt;/div&gt;</dt>
+    <dd>A generic divider element. Use this to divide up your page layout into distinct parts.</dd>
+    <dt>&lt;a&gt;Anchor&lt;/a&gt;</dt>
+    <dd>There are used to make links and define parts of the page that can be skipped to.</dd>
+    <dt>&lt;p&gt;Paragraph&lt;/p&gt;</dt>
+    <dd>Make paragraphs of text.</dd>
+    <dt>&lt;strong&gt;Strong&lt;/strong&gt;</dt>
+    <dd>Represents important text which is bold by default.</dd>
+    <dt>&lt;em&gt;Emphasis&lt;/em&gt;</dt>
+    <dd>Represents emphasized text which is italic by default.</dd>
+  </dl>
+  <h2>Attributes</h2>
+  <p><span class="keyword">Attributes</span> let you add additional information to tags. Some tags require an attribute in order to be used for their intended purpose.</p>
+  <p>For example:</p>
+  <div class="code">&lt;div class=&quot;post&quot;&gt;</div>
+  <p>In this case, <span class="code">class="post"</span> is an attribute. class is the <span class="keyword">attribute name</span>, and post is the <span class="keyword">attribute value</span>.</p>
+  <h3>Multiple Attributes</h3>
+  <p>Multiple attributes are allowed. They&apos;re separated by a space. For instance:</p>
+  <div class="code">&lt;a class=&quot;special-link&quot; href=&quot;http://mysite.com/&quot;&gt;</div>
+  <p>In this case, class=&quot;special-link&quot; and href=&quot;http://mysite.com/&quot; are both attributes.</p>
+  <h3>Images</h3>
+  <p>&lt;img src=&quot;picture.jpg&quot;&gt;</p>
+  <h3>Links</h3>
+  <p>&lt;a href=&quot;http://github.com&quot;&gt;GitHub&lt;/a&gt;</p>
+  <h2>Basic HTML page structure</h2>
+  <p>This is the most basic valid HTML page structure for a web page.</p>
+  <div class="code">
+    <pre>
+&lt;!DOCTYPE html&gt;
+  &lt;html&gt; &lt;head&gt;
+    &lt;title&gt;The Page Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- Your code here --&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+  </div>
+  <h1>Part 2: CSS</h1>
+  <p>CSS targets HTML elements using <span class="keyword">selectors</span>. A selector can find and search for one or more HTML elements based on their tag, ID attribute value, class attribute value, nesting within other elements, and more. For instance:</p>
+  <div class="code">p { color: red; }</div>
+  <p>The selector is the p. It selects all &lt;p&gt; elements and sets their text color to red.</p>
+  <div class="code">p .post { color: green; }</div>
+  <p>This selector finds elements with a class="post" attribute and sets their text color to green. class attributes are used to set a name on elements; you can call it anything you want. class attributes are leveraged by CSS and JavaScript to find certain
+    elements by the class name you choose.</p>
+  <div class="code">p .post p a.special-link { color: blue; }</div>
+  <p>This selector will find <span class="code">&lt;p&gt;</span> tags which have a class="special-link" attribute. Those <span class="code">&lt;p&gt;</span> tags must be the child of a <span class="code">&lt;p&gt;</span> element. That <span class="code">&lt;p&gt;</span> element must be the child of an element with a class="post" attribute. The selected elements will have their color set to blue.</p>
+  <h2>Properties</h2>
+  <p>Once you select some elements with CSS, you may style them using properties. In the examples above, the properties are the parts that look like <span class="code">color: red;</span></p>
+  <p>A group of properties are surrounded by curly braces {}. Property names have a colon : at the end, and property values have a semi-colon ; at the end. Multiple properties may appear between the braces, and are usually separated onto their own lines.</p>
+  <div class="code">
+    <pre>p a.button {
+  padding: 15px;
+  background: red;
+  color: white;
+  border-radius: 4px;
+}</pre>
+  </div>
+  <h3>Common properties</h3>
+  <dl>
+    <dt>color</dt>
+    <dd>Sets the color of text. values: red, blue, etc... #ffffff, #000000, etc.</dd>
+    <dt>background-color</dt>
+    <dd>Sets the background color of an element. values: red, blue, etc... #ffffff, #000000, etc.</dd>
+    <dt>font-size</dt>
+    <dd>Font size of text. values: 24px, 50%, 2em, etc.</dd>
+    <dt>font-weight</dt>
+    <dd>The thickness of text. values: bold, normal, 300, 700, etc.</dd>
+    <dt>font-family</dt>
+    <dd>Name of the font you want to use. values: Arial, Helvetica, sans, sans-serif, etc.</dd>
+    <dt>text-align</dt>
+    <dd>Aligns text on the screen. values: left, right, center</dd>
+    <dt>margin</dt>
+    <dd>Adds spacing around an element. values: 10px, 20px, etc.</dd>
+    <dt>padding</dt>
+    <dd>Adds spacing inside an element. values: 10px, 20px, etc.</dd>
+  </dl>
 </body>
+
 </html>
