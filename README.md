@@ -6,4 +6,4 @@ Copyright © 2016 DxE Philadelphia. Licensed under [CC-BY-SA 4.0](http://creativ
 
 ## Deploy
 
-    dokku@dxephilly.org:learn2code.dxephilly.org
+    dokku@dxephilly.org:learn2code
