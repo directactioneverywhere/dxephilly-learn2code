@@ -1,9 +1,16 @@
-# Learn to Code: For the Animals
+Learn to Code: For the Animals
+==============================
 An introduction to web development for and by animal activists.
 
-## License
-Copyright © 2016 DxE Philadelphia. Licensed under [CC-BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/).
+Deploy
+------
 
-## Deploy
+Deploy
+------
 
-    dokku@dxephilly.org:learn2code
+    dokku@dxephilly.org:learn2code.dxephilly.org
+
+
+License
+=======
+Licensed under [CC-BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/).
